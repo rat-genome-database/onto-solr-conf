@@ -1,0 +1,31 @@
+<input type="checkbox" name="term_ckbox" value="#field('id')" 
+#set ($quotedId='"'+$doc.getFieldValue('id')+'"')
+#if ($request.params.get('selectedT').contains($quotedId))
+checked
+#end
+/>
+#if ($doc.getFieldValue('cat') == 'RGD_GENE')
+  #field('term')(<a href="http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=$doc.getFieldValue('id_l')">#field('id')</a>)
+#else
+  #field('term')(<a href="http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=$doc.getFieldValue('id')">#field('id')</a>)
+#end
+#set ($docDef=$doc.getFieldValue("def_en"))
+#set ($doc_Id=$doc.getFieldValue('id').replace(':','_'))
+  <input type="button" value="search for descendents" onclick="javascript:searchChildren('$docId');"/>
+#if ($doc.getFieldValue("def_en") || $doc.getFieldValue('synonym'))
+  <input type="button" value="show details" onclick="if ($(this).val() == 'hide details'){$(this).val('show details');$('#detail$doc_Id').hide('fast');} else {$(this).val('hide details');$('#detail$doc_Id').show('fast');}">
+  <div id="detail$doc_Id"  style="display: none" >
+  #if ($doc.getFieldValue("def_en"))
+    <div>  <b>Definition</b>: #field('def_en')</div>
+  #end
+  #if ($doc.getFieldValue('synonym_en'))
+    #set ($docSyns=$response.response.highlighting.get($docId).get('synonym_en'))
+    <div> <b>Synonyms</b>: 
+      #set ($synLength=$docSyns.size() - 1)
+      #foreach ($i in [0..$synLength])
+    $docSyns.get($i);&nbsp;&nbsp;&nbsp;&nbsp;
+      #end
+    </div>
+  #end
+</div>
+#end

@@ -1,0 +1,5 @@
+#foreach($doc in $response.results)
+#set($term = $doc.getFieldValue('term')+" ("+$doc.getFieldValue('id')+")")
+$term
+#end
+ 

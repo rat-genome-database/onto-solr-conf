@@ -1,0 +1,11 @@
+#set($returnStr="")
+#foreach($doc in $response.results)
+#set ($idStr='"'+$doc.getFieldValue('id')+'"')
+#if ($returnStr.length()>0)
+#set($returnStr=$returnStr+" OR "+$idStr)
+#else
+#set($returnStr=$idStr)
+#end
+#end
+$returnStr 
+

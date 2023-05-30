@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt
+END
+example.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt/example.xsl
+END
+example_atom.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt/example_atom.xsl
+END
+luke.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt/luke.xsl
+END
+example_rss.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt/example_rss.xsl
+END
+updateXml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/xslt/updateXml.xsl
+END

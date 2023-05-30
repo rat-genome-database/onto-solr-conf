@@ -1,0 +1,10 @@
+#set($found = false)
+#foreach($doc in $response.results)
+#set($term = $doc.getFieldValue('term_str'))
+#set($def = $doc.getFieldValue('def'))
+#if (!$found && $def && $def.length() > 2)
+$term: $def
+#set($found = true)
+#end
+#end
+

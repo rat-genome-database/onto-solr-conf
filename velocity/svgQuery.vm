@@ -1,0 +1,19 @@
+#set($returnStr="")
+#foreach($doc in $response.results)
+#set ($idStr=$doc.getFieldValue('id'))
+#if ($returnStr.length()>0)
+#set($returnStr=$returnStr+"+"+$idStr)
+#else
+#set($returnStr=$idStr)
+#end
+#end
+#set($returnStr="https://dev.rgd.mcw.edu/rgdweb/ontology/dot.html?standalone=&max_line_len=5&of=svg&node_url=https://pipelines.rgd.mcw.edu/rgdweb/ontology/annot.html%3Facc_id=&acc_id="+$returnStr)
+<html>
+Search condition: [<font color="red">$request.params.get("q")</font>]<br/>
+#if ($request.params.get("fq") && $request.params.get("fq").length()>0)
+Filters:  <font color="blue">$request.params.get("fq")</font>
+#end
+</br>
+$import.read($returnStr).replace("/rgdweb","https://dev.rgd.mcw.edu/rgdweb")
+</html>
+

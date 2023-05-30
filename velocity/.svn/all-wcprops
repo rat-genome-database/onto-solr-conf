@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/rgd/!svn/ver/14730/dev/text_mining/OntoSolr/conf/velocity
+END
+footer.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/footer.vm
+END
+head.vm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/rgd/!svn/ver/14730/dev/text_mining/OntoSolr/conf/velocity/head.vm
+END
+clusterResults.vm
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/clusterResults.vm
+END
+termidselect1.vm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/rgd/!svn/ver/14278/dev/text_mining/OntoSolr/conf/velocity/termidselect1.vm
+END
+termselect.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/termselect.vm
+END
+facet_fields.vm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/rgd/!svn/ver/14622/dev/text_mining/OntoSolr/conf/velocity/facet_fields.vm
+END
+hitGrouped.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/hitGrouped.vm
+END
+termidterm.vm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/rgd/!svn/ver/14278/dev/text_mining/OntoSolr/conf/velocity/termidterm.vm
+END
+facet_queries.vm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/facet_queries.vm
+END
+cluster.vm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/cluster.vm
+END
+querySpatial.vm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/querySpatial.vm
+END
+termidselect.vm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/rgd/!svn/ver/14277/dev/text_mining/OntoSolr/conf/velocity/termidselect.vm
+END
+hit.vm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/hit.vm
+END
+svgQuery.vm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/rgd/!svn/ver/14634/dev/text_mining/OntoSolr/conf/velocity/svgQuery.vm
+END
+header.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/14598/dev/text_mining/OntoSolr/conf/velocity/header.vm
+END
+jquery.autocomplete.curation.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/rgd/!svn/ver/15427/dev/text_mining/OntoSolr/conf/velocity/jquery.autocomplete.curation.js
+END
+termidsel_cur.vm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/rgd/!svn/ver/14278/dev/text_mining/OntoSolr/conf/velocity/termidsel_cur.vm
+END
+browse.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/14646/dev/text_mining/OntoSolr/conf/velocity/browse.vm
+END
+query.vm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/rgd/!svn/ver/14690/dev/text_mining/OntoSolr/conf/velocity/query.vm
+END
+doc.vm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/rgd/!svn/ver/14689/dev/text_mining/OntoSolr/conf/velocity/doc.vm
+END
+facets.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/14620/dev/text_mining/OntoSolr/conf/velocity/facets.vm
+END
+jquery.autocomplete.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/rgd/!svn/ver/14557/dev/text_mining/OntoSolr/conf/velocity/jquery.autocomplete.js
+END
+layout.vm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/layout.vm
+END
+suggest.vm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/suggest.vm
+END
+curtermselect.vm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/curtermselect.vm
+END
+facet_ranges.vm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/facet_ranges.vm
+END
+termsstring.vm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/termsstring.vm
+END
+idstring.vm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/rgd/!svn/ver/14564/dev/text_mining/OntoSolr/conf/velocity/idstring.vm
+END
+termmatch.vm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/termmatch.vm
+END
+jquery.autocomplete.css
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/jquery.autocomplete.css
+END
+VM_global_library.vm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/VM_global_library.vm
+END
+main.css.bak
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/main.css.bak
+END
+result_count.vm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/rgd/!svn/ver/14278/dev/text_mining/OntoSolr/conf/velocity/result_count.vm
+END
+recordCount.vm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/rgd/!svn/ver/14278/dev/text_mining/OntoSolr/conf/velocity/recordCount.vm
+END
+jquery.autocomplete.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/rgd/!svn/ver/15426/dev/text_mining/OntoSolr/conf/velocity/jquery.autocomplete.test.js
+END
+tabs.vm
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/rgd/!svn/ver/12608/dev/text_mining/OntoSolr/conf/velocity/tabs.vm
+END
+main.css
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/rgd/!svn/ver/14650/dev/text_mining/OntoSolr/conf/velocity/main.css
+END

@@ -1,0 +1,22 @@
+#set($uniqueResults=[])
+#set($resultsMap=$contents.getEmptyMap())
+#set($cat='')
+#set($cat='')
+#foreach($doc in $response.results)
+ 	#if($doc.getFieldValue('cat') == 'RGD_GENE')
+ 		#set($cat='RGD_GENE')
+		#set($term = $doc.getFieldValue('term').toLowerCase())
+		#if(!$uniqueResults.contains($term))
+		#set($output=$uniqueResults.add($term))
+		#end
+	#else
+		#set($term = $doc.getFieldValue('term')+" ("+$doc.getFieldValue('id')+")")
+		 $term	
+	#end
+	
+#end
+#if($cat == 'RGD_GENE')
+#foreach($r in $uniqueResults)
+ $r
+#end
+#end

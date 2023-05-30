@@ -1,0 +1,72 @@
+
+    ## An example of using an arbitrary request parameter
+    <!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+#if ($request.params.get("q") && $request.params.get("q")!="")
+<title>$request.params.get('q')</title>
+#else
+<title>#param('title')</title>
+#end
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<script type="text/javascript" src="/QueryBuilder/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/QueryBuilder/js/jquery-ui-1.8.18.js"></script>
+  <link rel="stylesheet" type="text/css" href="#{url_for_solr}/admin/file?file=/velocity/main.css&contentType=text/css"/>
+  <link rel="stylesheet" href="#{url_for_solr}/admin/file?file=/velocity/jquery.autocomplete.css&contentType=text/css" type="text/css" />
+  <script type="text/javascript" src="#{url_for_solr}/admin/file?file=/velocity/jquery.autocomplete.js&contentType=text/javascript"></script>
+
+
+    <script>
+var keepFilter=true;
+    $(document).ready(function(){
+       $("#query-form").submit(function(event){
+if (keepFilter) {
+var filters="";
+var checkedFilter = $('input[name="cat_fq"]:checked');
+if (checkedFilter.length > 0) {
+   for (var i = 0; i < checkedFilter.length; i++) filters = checkedFilter[i].value  + " " + filters;
+}
+
+if (filters.length > 0) filters="cat:("+filters+")";
+$("input[name='fq']").val(filters);
+} else {
+$('input[name="cat_fq"]:checked').attr("checked", false);
+} 
+
+});
+$("input[name='term_ckbox']").change(function() {
+  var q_val = $("#selectedT").val();
+  var term_q = '"'+$(this).val().trim()+'"';
+  if ($(this).is(":checked")) {
+    $("#selectedT").val(q_val+ " " + term_q);
+  } else {
+    $("#selectedT").val(q_val.replace(term_q,""));
+  }
+
+#if ($request.params.get("start"))
+  $("#query-start").val($request.params.get('start'));
+#end
+  $("#query-form").submit();
+});
+    });
+
+function removeFilters() {
+  keepFilter=false;
+  $("#query-form").submit();
+}
+    </script>
