@@ -1,9 +1,0 @@
-#parse('facet_fields.vm')  
-</form>
-</div>
-#parse('facet_queries.vm')
-#parse('facet_ranges.vm')
-#parse('cluster.vm')        
-
-
-

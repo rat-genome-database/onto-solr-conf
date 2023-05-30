@@ -1,6 +1,0 @@
-#foreach($doc in $response.results)
-#set($term = $doc.getFieldValue('term')+"|"+$doc.getFieldValue('id'))
-$term
-#end
-REQUEST NEW TERM (00:0000000)|00:0000000
- 
