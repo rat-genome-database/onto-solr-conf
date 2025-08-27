@@ -62,7 +62,7 @@
 
 
   <!-- The default high-performance update handler -->
-  <updateHandler class="solr.UpdateHandler">
+  <updateHandler>
   </updateHandler>
   
 
