@@ -33,16 +33,16 @@
     <luceneMatchVersion>8.11</luceneMatchVersion>
 
 
-<!--    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-dataimporthandler-.*\.jar" />-->
+    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-dataimporthandler-.*\.jar" />
 
-<!--    <lib dir="${solr.install.dir:../../../..}/contrib/extraction/lib" regex=".*\.jar" />-->
-<!--    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-cell-\d.*\.jar" />-->
+    <lib dir="${solr.install.dir:../../../..}/contrib/extraction/lib" regex=".*\.jar" />
+    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-cell-\d.*\.jar" />
 
-<!--    <lib dir="${solr.install.dir:../../../..}/contrib/langid/lib/" regex=".*\.jar" />-->
-<!--    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-langid-\d.*\.jar" />-->
+    <lib dir="${solr.install.dir:../../../..}/contrib/langid/lib/" regex=".*\.jar" />
+    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-langid-\d.*\.jar" />
 
-<!--    <lib dir="${solr.install.dir:../../../..}/contrib/velocity/lib" regex=".*\.jar" />-->
-<!--    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-velocity-\d.*\.jar" />-->
+    <lib dir="${solr.install.dir:../../../..}/contrib/velocity/lib" regex=".*\.jar" />
+    <lib dir="${solr.install.dir:../../../..}/dist/" regex="solr-velocity-\d.*\.jar" />
 
   <dataDir>${solr.data.dir:}</dataDir>
 
