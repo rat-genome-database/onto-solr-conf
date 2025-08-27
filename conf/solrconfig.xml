@@ -47,11 +47,11 @@
        that you fully re-index after changing this setting as it can
        affect both how text is indexed and queried.
     -->
-  <luceneMatchVersion>LUCENE_36</luceneMatchVersion>
+    <luceneMatchVersion>8.11</luceneMatchVersion>
 
   <!-- lib directives can be used to instruct Solr to load an Jars
        identified and use them to resolve any "plugins" specified in
-       your solrconfig.xml or schema.xml (ie: Analyzers, Request
+       your solrconfig.xml or managed-schema (ie: Analyzers, Request
        Handlers, etc...).
 
        All directories and paths are resolved relative to the
@@ -443,10 +443,10 @@
            autowarmCount - the number of entries to prepopulate from
                and old cache.  
       -->
-    <filterCache class="solr.FastLRUCache"
-                 size="512"
-                 initialSize="512"
-                 autowarmCount="0"/>
+      <filterCache class="solr.CaffeineCache"
+                   size="512"
+                   initialSize="512"
+                   autowarmCount="0"/>
 
     <!-- Query Result Cache
          
@@ -454,10 +454,12 @@
          (DocList) based on a query, a sort, and the range of documents 
          requested.  
       -->
-    <queryResultCache class="solr.LRUCache"
-                     size="512"
-                     initialSize="512"
-                     autowarmCount="0"/>
+
+      <queryResultCache class="solr.CaffeineCache"
+                        size="512"
+                        initialSize="512"
+                        autowarmCount="0"/>
+
    
     <!-- Document Cache
 
@@ -465,10 +467,10 @@
          document).  Since Lucene internal document ids are transient,
          this cache will not be autowarmed.  
       -->
-    <documentCache class="solr.LRUCache"
-                   size="512"
-                   initialSize="512"
-                   autowarmCount="0"/>
+      <documentCache class="solr.CaffeineCache"
+                     size="512"
+                     initialSize="512"
+                     autowarmCount="0"/>
     
     <!-- Field Value Cache
          
@@ -1050,7 +1052,7 @@
        <lst name="master">
          <str name="replicateAfter">commit</str>
          <str name="replicateAfter">startup</str>
-         <str name="confFiles">schema.xml,stopwords.txt</str>
+         <str name="confFiles">managed-schema,stopwords.txt</str>
        </lst>
        <lst name="slave">
          <str name="masterUrl">http://localhost:8983/solr/replication</str>
